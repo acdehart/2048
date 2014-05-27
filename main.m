@@ -62,16 +62,12 @@ while max(max(A))<2048
     switch usr
         case 'w'
             A=Up(A)
-            sound(s, sf);
         case 's'
             A=Down(A)
-            sound(s, sf);
         case 'd'
             A=Right(A)
-            sound(s, sf);
         case 'a'
             A=Left(A)
-            sound(s, sf);
         otherwise
             disp 'Invalid Input'
             pause(1)
@@ -87,6 +83,7 @@ while max(max(A))<2048
         clc
         A
     else
+        sound(s, sf);
         RandNum
         B=zeros(4,4);
         clc
