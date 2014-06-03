@@ -88,6 +88,7 @@ while max(max(A))<2048
         B=zeros(4,4);
         clc
         if isequal(Left(A),Right(A),Up(A),Down(A)) && numel(find(A))==16
+            A
             disp 'Game Over...'
             break;
         end
